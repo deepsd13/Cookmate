@@ -1,0 +1,11 @@
+<div class="row" style="margin-top: 20px;">
+    <div class="col-xs-12">
+        <button class="btn btn-outline-secondary" (click)="OnNewRecipe()" style="margin-left:15px;">New Recipe</button>
+    </div>
+</div>
+<hr>
+<div class="row overflow-auto">
+    <div class="col-xl-12">
+        <app-recipe-item *ngFor="let recipe of recipes;let i = index" [recipe]="recipe" [index]="i"></app-recipe-item>
+    </div>
+</div>

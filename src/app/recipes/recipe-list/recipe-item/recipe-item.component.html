@@ -1,0 +1,13 @@
+<div   *ngIf="recipe" style="cursor: pointer;" class="card text-left mb-4 mx-auto" routerLinkActive="active" [routerLink]="[index]" >
+    <div class="row no-gutters">
+        <div class="col-md-5">
+            <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-fluid" style="width: 100%; height: 100%;">
+        </div>
+        <div class="col-md-7">
+            <div class="card-body" style="margin-right: 20px;">
+                <h5 class="card-title">{{recipe.name}}</h5>
+                <p class="card-text">{{recipe.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

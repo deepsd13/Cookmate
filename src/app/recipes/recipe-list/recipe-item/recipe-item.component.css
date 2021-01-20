@@ -1,0 +1,11 @@
+@media only screen and (max-width: 800px) {
+    .img-fluid {
+        display: none;
+    }
+    .card-text {
+        display: none;
+    }
+    /* .card {
+        width: 50%;
+    } */
+}
